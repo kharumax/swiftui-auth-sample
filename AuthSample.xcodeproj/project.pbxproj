@@ -11,6 +11,7 @@
 		4CBD0D7925AD90EF003B9B9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD0D7825AD90EF003B9B9C /* ContentView.swift */; };
 		4CBD0D7B25AD90F1003B9B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD0D7A25AD90F1003B9B9C /* Assets.xcassets */; };
 		4CBD0D7E25AD90F1003B9B9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD0D7D25AD90F1003B9B9C /* Preview Assets.xcassets */; };
+		4CBD0D8B25AD945A003B9B9C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD0D8A25AD945A003B9B9C /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		4CBD0D7A25AD90F1003B9B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBD0D7D25AD90F1003B9B9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CBD0D7F25AD90F1003B9B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBD0D8925AD942E003B9B9C /* Task.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Task.md; sourceTree = "<group>"; };
+		4CBD0D8A25AD945A003B9B9C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 				4CBD0D7A25AD90F1003B9B9C /* Assets.xcassets */,
 				4CBD0D7F25AD90F1003B9B9C /* Info.plist */,
 				4CBD0D7C25AD90F1003B9B9C /* Preview Content */,
+				4CBD0D8925AD942E003B9B9C /* Task.md */,
 			);
 			path = AuthSample;
 			sourceTree = "<group>";
@@ -75,6 +79,7 @@
 		4CBD0D8625AD9162003B9B9C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4CBD0D8A25AD945A003B9B9C /* MainTabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			files = (
 				4CBD0D7925AD90EF003B9B9C /* ContentView.swift in Sources */,
 				4CBD0D7725AD90EF003B9B9C /* AuthSampleApp.swift in Sources */,
+				4CBD0D8B25AD945A003B9B9C /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
