@@ -9,9 +9,7 @@ import SwiftUI
 
 struct SignUpView: View {
     
-    @State var username = ""
-    @State var email = ""
-    @State var password = ""
+    @EnvironmentObject var viewModel: AuthViewModel
     @Binding var isShowSignUpView: Bool
     
     var body: some View {
@@ -19,22 +17,24 @@ struct SignUpView: View {
             Spacer()
             ZStack {
                 HStack {
-                    TextField("Username", text: $username).padding()
+                    TextField("Username", text: $viewModel.username).padding()
                 }.overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1))
             }.padding()
             ZStack {
                 HStack {
-                    TextField("Email", text: $email).padding()
+                    TextField("Email", text: $viewModel.email).padding()
                 }.overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1))
             }.padding()
             ZStack {
                 HStack {
-                    SecureField("Password",text: $password).padding()
+                    SecureField("Password",text: $viewModel.password).padding()
                 }.overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1))
             }.padding().padding(.bottom)
-            Button(action: {}, label: {
+            Button(action: {
+                viewModel.signUp()
+            }, label: {
                 Text("SignUp").font(.system(size: 20,weight: .semibold)).foregroundColor(.black).padding()
-            }).overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1))
+            }).overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1)).disabled(!viewModel.isSignUpValid)
             .padding(.bottom)
             Button(action: {
                 self.isShowSignUpView = false

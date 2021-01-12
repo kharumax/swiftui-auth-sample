@@ -10,10 +10,10 @@ import SwiftUI
 struct MainTabView: View {
     
     @Binding var selectedIndex: Int
-    
+
     var body: some View {
         TabView(selection: $selectedIndex) {
-            Text("HomeView")
+            HomeView()
                 .onTapGesture {
                     selectedIndex = 0
                 }
@@ -22,7 +22,7 @@ struct MainTabView: View {
                     Text("ホーム")
                 }
                 .tag(0)
-            Text("ProfileView")
+            ProfileView()
                 .onTapGesture {
                     selectedIndex = 1
                 }
