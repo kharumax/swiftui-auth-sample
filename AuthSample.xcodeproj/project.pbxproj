@@ -12,6 +12,8 @@
 		4CBD0D7B25AD90F1003B9B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD0D7A25AD90F1003B9B9C /* Assets.xcassets */; };
 		4CBD0D7E25AD90F1003B9B9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD0D7D25AD90F1003B9B9C /* Preview Assets.xcassets */; };
 		4CBD0D8B25AD945A003B9B9C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD0D8A25AD945A003B9B9C /* MainTabView.swift */; };
+		4CBD0D9125AD99AC003B9B9C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD0D9025AD99AC003B9B9C /* LoginView.swift */; };
+		4CBD0D9425AD99BA003B9B9C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD0D9325AD99BA003B9B9C /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		4CBD0D7F25AD90F1003B9B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CBD0D8925AD942E003B9B9C /* Task.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Task.md; sourceTree = "<group>"; };
 		4CBD0D8A25AD945A003B9B9C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		4CBD0D9025AD99AC003B9B9C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4CBD0D9325AD99BA003B9B9C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		4CBD0D8625AD9162003B9B9C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4CBD0D8E25AD9670003B9B9C /* Auth */,
 				4CBD0D8A25AD945A003B9B9C /* MainTabView.swift */,
 			);
 			path = View;
@@ -96,6 +101,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4CBD0D8E25AD9670003B9B9C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4CBD0D9025AD99AC003B9B9C /* LoginView.swift */,
+				4CBD0D9325AD99BA003B9B9C /* SignUpView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBD0D7925AD90EF003B9B9C /* ContentView.swift in Sources */,
+				4CBD0D9425AD99BA003B9B9C /* SignUpView.swift in Sources */,
 				4CBD0D7725AD90EF003B9B9C /* AuthSampleApp.swift in Sources */,
+				4CBD0D9125AD99AC003B9B9C /* LoginView.swift in Sources */,
 				4CBD0D8B25AD945A003B9B9C /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
