@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    @Binding var selectedIndex: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView(selection: $selectedIndex) {
+            Text("HomeView")
+                .onTapGesture {
+                    selectedIndex = 0
+                }
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("ホーム")
+                }
+                .tag(0)
+            Text("ProfileView")
+                .onTapGesture {
+                    selectedIndex = 1
+                }
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("プロフィール")
+                }
+                .tag(1)
+        }
     }
 }
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabView()
+        MainTabView(selectedIndex: .constant(0))
     }
 }

@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let isShowHomeView = false
+    @State var selectedIndex = 0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Group {
+            if isShowHomeView {
+                NavigationView {
+                    MainTabView(selectedIndex: $selectedIndex)
+                        .padding(.top,8)
+                        .navigationTitle("ホーム")
+                        .navigationBarTitleDisplayMode(.inline)
+                }
+            } else {
+                LoginView()
+            }
+        }
     }
 }
 
